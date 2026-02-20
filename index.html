@@ -1,13 +1,100 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>millenium-sig</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de gerenciamento</title>
+
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <script type="module" src="./src/main.js" defer></script>
+</head>
+<body>
+    <header>
+        
+    </header>
+    <div class="sidebar">
+       
+        <div class="logo-content">
+            <div class="logo">
+                <i class="bxd bx-grid"></i>
+                <div class="logo-name">Millenium</div>
+            </div>
+            <i class="bx bx-menu" id="btn"></i>
+        </div>
+        
+        <ul class="nav-list">    
+            <li>
+                <a href="#" onclick="showSection('home')">
+                    <i class="bx bx-home"></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+
+            <li>
+                <a href="#" onclick="showSection('register')">
+                    <i class="bx bx-edit"></i>
+                    <span class="links_name">Cadastrar</span>
+                </a>
+                <span class="tooltip">Cadastrar</span>
+            </li>
+
+            <li>
+                <a href="#" onclick="showSection('movements')">
+                    <i class='bxd  bx-arrow-left-right'></i> 
+                    <span class="links_name">Movimentações</span>
+                </a>
+                <span class="tooltip">Movimentações</span>
+            </li>
+
+            <li>
+                <a href="#" onclick="showSection('reports')">
+                    <i class="bx bx-pie-chart-alt-2"></i>
+                    <span class="links_name">Relatórios</span>
+                </a>
+                <span class="tooltip">Relatórios</span>
+            </li>
+
+            <li>
+                <a href="#" onclick="showSection('settins')">
+                    <i class="bxd bx-cog"></i>
+                    <span class="links_name">Configurações</span>
+                </a>
+                <span class="tooltip">Configurações</span>
+            </li>
+            <li class="logout-item">
+                <a href="#" onclick="showSection('logout')">
+                    <i class="bx bx-door-open"></i>
+                    <span class="links_name">Encerrar sessão</span>
+                </a>
+                <span class="tooltip">Sair</span>
+            </li>
+        </ul>
+    </div>
+
+  <div class="home-content">
+    
+    <section id="home" class="main-section" style="display: none;">
+        <div class="text">Bem-vindo à Home</div>
+        <p>Conteúdo da página principal...</p>
+    </section>
+
+    <section id="register" style="display: none;">
+        <table>
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+    </section>
+
+    <section id="reports" class="main-section" style="display: none;">
+        <div class="text">Relatórios Mensais</div>
+        <p>Gráficos e tabelas aqui...</p>
+    </section>
+
+    <section id="settings" class="main-section" style="display: none;">
+        <div class="text">Configurações do Sistema</div>
+    </section>
+
+</div>
+</body>
 </html>
